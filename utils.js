@@ -8,13 +8,21 @@ All plants will be watered on the first day of the schedule (next Monday).
 const data = require('./Apprentice_WeGrowInTandem_Data.json')
 
 const parseData = array => {
-    let obj = {}
     array.forEach(plant => {
-        obj[plant.name] = +(plant.water_after.replace(/\D/g,''))
+        plant.day = +(plant.water_after.replace(/\D/g,''))
     })
-    return obj;
+    return array;
 }
 
 const plantObj = parseData(data);
+console.log(plantObj)
 
+class PlantsScheduler {
+    constructor(plantData){
+        this.plants = plantData;
+    }
+    waterToday() {
+        return false
+    }
+}
 module.exports = plantObj;
