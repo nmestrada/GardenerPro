@@ -1,9 +1,10 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table'
+import Task from './Task'
+import plantObj from '../../utils.js'
 
 const Calendar = () => {
     const today = new Date(Date.now());
-    console.log(today)
     //const firstDay = today.getDay();
     const firstDay = (new Date(today.getFullYear(), today.getMonth())).getDay();
     function daysInMonth(date) { 
@@ -16,9 +17,9 @@ const Calendar = () => {
         const rows = Math.ceil(lastDay/7);
         let j = 1;
         for (let i = 0; i < rows; i++) {
-          let children = []
+          let children = [];
           while (j <= lastDay) {
-            children.push(<td key={j} tableRow={i}>{`${j}`}</td>)
+            children.push(<td key={j}>{`${j}`}</td>)
             j++
             if((j-1)%7 === 0 && j > 0){
                 break;
@@ -28,7 +29,7 @@ const Calendar = () => {
         }
         return table
       }
-
+    
 return(
     <Table responsive>
     <thead>
