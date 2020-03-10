@@ -1,8 +1,6 @@
 # GardenerPro
-This is part of a submission for a code challenge. Didn't finish, because I only had a few hours to do this. Was starting to add a class for the plant data, to use the class methods to see which plants need to be watered on what day and to keep track of previous waterings.
+This is a tool for indoor plant growers who are too busy to keep track of which plants to water and when. 
 
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### To use this code
 
