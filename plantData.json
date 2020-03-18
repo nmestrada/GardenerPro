@@ -1,46 +1,50 @@
 [
   {
     "name": "Fiddle Leaf Fig",
-    "water_after": "7 days"
+    "water_after": 7,
+    "sunlight": "direct"
   },
   {
     "name": "Snake Plant",
-    "water_after": "14 days"
+    "water_after": 14,
+    "sunlight": "indirect"
   },
   {
     "name": "Money Tree",
-    "water_after": "14 days"
+    "water_after": 14,
+    "sunlight": "indirect"
   },
   {
     "name": "Bird's Nest Fern",
-    "water_after": "3 days"
+    "water_after": 3,
+    "sunlight": "indirect"
   },
   {
     "name": "Croton",
-    "water_after": "7 days"
+    "water_after": 7
   },
   {
     "name": "Bell Pepper Plant",
-    "water_after": "3 days"
+    "water_after": 3
   },
   {
     "name": "Strawberry Plant",
-    "water_after": "3 days"
+    "water_after": 3
   },
   {
     "name": "Dracaena",
-    "water_after": "14 days"
+    "water_after": 14
   },
   {
     "name": "Spider Plant",
-    "water_after": "7 days"
+    "water_after": 7
   },
   {
     "name": "Jade",
-    "water_after": "14 days"
+    "water_after": 14
   },
   {
     "name": "Wavy Fern",
-    "water_after": "2 days"
+    "water_after": 2
   }
 ]

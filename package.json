@@ -1,12 +1,13 @@
 {
   "name": "boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "a plant app",
   "main": "server/app.js",
   "scripts": {
     "test": "mocha ./test/*.spec.js --compilers js:babel-register",
     "start": "node server/app.js",
-    "start-dev": "webpack -w & nodemon server/app.js"
+    "start-dev": "webpack -w & nodemon server/app.js",
+    "seed": "node seed.js"
   },
   "keywords": [],
   "author": "",

@@ -5,7 +5,7 @@ Watering an individual plant takes no time at all so you don't have to worry abo
 The scheduling should start from next Monday and last for 12 weeks.
 All plants will be watered on the first day of the schedule (next Monday).
  */
-const data = require('./Apprentice_WeGrowInTandem_Data.json')
+const data = require('./plantData.json')
 
 const parseData = array => {
     array.forEach(plant => {

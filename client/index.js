@@ -1,15 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
-import store from './client/redux/store'
-import Root from './client/components/Root'
-import './style.css';
-
-
+import {Router} from 'react-router-dom'
+import history from './history'
+import store from './redux/store'
+import App from './app'
 
 ReactDOM.render(
     <Provider store={store}>
-      <Root />
+      <Router history={history}>
+        <App />
+      </Router>
     </Provider>,
     document.getElementById('app')
   )
