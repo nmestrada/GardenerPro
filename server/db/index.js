@@ -1,12 +1,12 @@
 //We'll make the relations in this file
-const Plants = require('./plants')
-const Users = require('./users')
+const Plant = require('./plant')
+const User = require('./user')
 
-Users.hasMany(Plants, {through: 'user-plants'})
-Plants.belongsToMany(Users, {through: 'user-plants'})
+User.belongsToMany(Plant, {through: 'user-plants'})
+Plant.belongsToMany(User, {through: 'user-plants'})
 
 module.exports = {
-    Plants,
-    Users
+    Plant,
+    User
 }
 

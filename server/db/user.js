@@ -2,7 +2,7 @@ const crypto = require('crypto');
 const _ = require('lodash');
 const Sequelize = require('sequelize');
 
-const db = require('./db');
+const db = require('./database.js');
 
 const User = db.define('user', {
   email: {
@@ -12,6 +12,10 @@ const User = db.define('user', {
   },
   password: {
     type: Sequelize.STRING
+  },
+  isAdmin: {
+    type: Sequelize.BOOLEAN,
+    defaultValue: false
   },
   salt: {
     type: Sequelize.STRING

@@ -9,7 +9,7 @@ const data = require('./plantData.json')
 
 const parseData = array => {
     array.forEach(plant => {
-        plant.day = +(plant.water_after.replace(/\D/g,''))
+        plant.day = +(plant.water_after)
     })
     return array;
 }

@@ -5,7 +5,10 @@ const morgan = require('morgan');
 const db = require('./db/database'); 
 const session = require('express-session');
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'test') {
+    after('close the session store', () => sessionStore.stopExpiringSessions())
+  }
+else if (process.env.NODE_ENV === 'development') {
     require('./localSecrets'); // this will mutate the process.env object with your secrets.
   }
   

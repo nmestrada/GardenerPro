@@ -12,10 +12,11 @@ import Navbar from './components/Navbar'
 import Routes from './components/Routes'
 
 //add grid css styles here
+import './stylesheets/app.scss'
 
 const App = () => {
   return (
-    <div>
+    <div className="main-body">
       <Navbar />
       <Routes />
     </div>

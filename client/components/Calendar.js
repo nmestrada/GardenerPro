@@ -3,6 +3,9 @@ import Table from 'react-bootstrap/Table'
 import Task from './Task'
 import plantObj from '../../utils.js'
 
+//css styles
+import '../stylesheets/calendar.scss'
+
 const Calendar = () => {
     const today = new Date(Date.now());
     const firstDay = (new Date(today.getFullYear(), today.getMonth())).getDay();
@@ -29,7 +32,7 @@ const Calendar = () => {
       }
     
 return(
-    <Table responsive>
+    <Table responsive id="calendar">
     <thead>
       <tr>
         <th>Sunday</th>

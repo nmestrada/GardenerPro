@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 const db = require('./database')
 
 
-const Plants = db.define('plants', {
+const Plant = db.define('plant', {
     name:{
         type: Sequelize.STRING,
         allowNUll: false
@@ -26,4 +26,4 @@ const Plants = db.define('plants', {
     
 });
 
-module.exports = Plants;
+module.exports = Plant;

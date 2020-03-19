@@ -4,7 +4,7 @@
   "description": "a plant app",
   "main": "server/app.js",
   "scripts": {
-    "test": "mocha ./test/*.spec.js --compilers js:babel-register",
+    "test": "NODE_ENV='test' mocha \"./server/**/*.spec.js\" \"./client/**/*.spec.js\" \"./script/**/*.spec.js\" --watch --require @babel/polyfill --require @babel/register",
     "start": "node server/app.js",
     "start-dev": "webpack -w & nodemon server/app.js",
     "seed": "node seed.js"
@@ -21,8 +21,11 @@
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
     "css-loader": "^3.2.0",
-    "enzyme": "^3.10.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "mocha": "^6.2.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
     "source-map-loader": "^0.2.4",
     "style-loader": "^1.0.0",
     "supertest": "^4.0.2",

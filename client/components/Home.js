@@ -1,12 +1,12 @@
 import React from 'react'
-
+import Login from './LoginSignup'
+import '../stylesheets/home.scss'
 const Home = () => {
     return(
         <div className="welcome">
             <div>Welcome to Urban Gardener Pro!</div>
             <p>About: Gardener Pro is for the busy urban gardener with not a lot of time but plants to take care of!</p>
-            <div>Member Login</div>
-            <div>Not a member? Sign up!</div>
+            <Login/>
         </div>
     )
 }

@@ -1,0 +1,7 @@
+.main-body{
+    display: grid;
+    grid-template-areas: "title nav"
+                        "sidebar body";
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 150px 1fr;
+}
